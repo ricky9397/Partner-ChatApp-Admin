@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 100;
+  /*src: url(/common/fonts/NotoSansKR-Thin.woff2) format("woff2"), url(/common/fonts/NotoSansKR-Thin.woff) format("woff"), url(/common/fonts/NotoSansKR-Thin.otf) format("opentype");*/
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  /*src: url(/common/fonts/NotoSansKR-Light.woff2) format("woff2"), url(/common/fonts/NotoSansKR-Light.woff) format("woff"), url(/common/fonts/NotoSansKR-Light.otf) format("opentype");*/
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  /*src: url(/common/fonts/NotoSansKR-Regular.woff2) format("woff2"), url(/common/fonts/NotoSansKR-Regular.woff) format("woff"), url(/common/fonts/NotoSansKR-Regular.otf) format("opentype");*/
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  /*src: url(/common/fonts/NotoSansKR-Medium.woff2) format("woff2"), url(/common/fonts/NotoSansKR-Medium.woff) format("woff"), url(/common/fonts/NotoSansKR-Medium.otf) format("opentype");*/
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  /*src: url(/common/fonts/NotoSansKR-Bold.woff2) format("woff2"), url(/common/fonts/NotoSansKR-Bold.woff) format("woff"), url(/common/fonts/NotoSansKR-Bold.otf) format("opentype");*/
+}
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  overflow-y: auto;
+  position: relative;
+  letter-spacing: -0.05em;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+address {
+  margin: 0;
+  padding: 0;
+}
+pre {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.fixedTable table {
+  table-layout: fixed;
+}
+fieldset,
+img {
+  border: 0;
+  vertical-align: middle;
+}
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1em;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+body {
+  position: relative;
+}
+em {
+  font-style: normal;
+}
+legend,
+hr,
+caption {
+  display: none;
+}
+input {
+  margin: 0;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 35px;
+  color: #666;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+}
+.errer {
+  border-color: #fe0000 !important;
+}
+
+.select {
+  position: relative;
+}
+.select span {
+  display: inline-block;
+  padding: 0 24px 0 10px;
+  border: 1px solid #ccc;
+  text-overflow: ellipsis;
+  width: 100%;
+  line-height: 33px;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  background: #fff url("/common/images/bl-arrow.png") no-repeat right 11px center;
+  background-size: 7px auto;
+}
+.select select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+input::-webkit-input-placeholder {
+}
+input:-ms-input-placeholder {
+}
+input:read-only {
+  background: #ededed;
+}
+
+/* skipNav */
+#skipNav {
+  height: 0;
+}
+#skipNav dt {
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+}
+#skipNav dd a {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: -10000px;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+#skipNav dd a.on {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 0;
+  background: #272727;
+  font-weight: bold;
+  color: #fff;
+}
+.modaltd {
+	word-break: break-all;
+	white-space: break-spaces;
+	line-height: 20px !important;
+}
