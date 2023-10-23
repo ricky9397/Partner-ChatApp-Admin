@@ -1,0 +1,1193 @@
+@charset "utf-8";
+/*>>>>>>>>>> 공통 <<<<<<<<<<*/
+/* 텍스트 정렬 */
+.txtL {
+  text-align: left !important;
+}
+.txtC {
+  text-align: center !important;
+}
+.txtR {
+  text-align: right !important;
+}
+.cRed {
+  color: #f5002e !important;
+}
+.cBlue {
+  color: #0081dc !important;
+}
+/* 가로길이 */
+.w50 {
+  width: 50px !important;
+}
+.w100 {
+  width: 100px !important;
+}
+.w150 {
+  width: 150px !important;
+}
+/* 여백 */
+.mT50 {
+  margin-top: 50px !important;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 12px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 33px;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+}
+h4 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.9px;
+  text-align: left;
+  color: #000000;
+}
+h4:first-child {
+  padding-top: 40px;
+}
+h4 + .rowTable,
+h4 + .colTable {
+  margin-top: -10px;
+}
+/* 텍스트 스타일 */
+.txtGroup{
+  padding-left: 24px;
+}
+.txtGroup + .txtGroup{
+  margin-top: 36px;
+}
+.txtGroup .titNumStl01{
+  margin-left: -24px;
+}
+.txtGroup .titNumStl02{
+  margin-left: -12px;
+}
+.titStl01{
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.titStl02{
+  font-weight: 700;
+  font-size: 24px;
+  color: #22386c;
+  line-height: 1.25;
+}
+.txtStl01{
+  font-weight: 700;
+  font-size: 20px;
+  color: #5975b9;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.txtStl02{
+  font-weight: 500;
+  font-size: 15px;
+  color: #888888;
+  line-height: 1.75;
+}
+#adminWrap {
+  min-width: 1500px; /* 오종민 변경 */
+}
+#adminWrap #container:before {
+  content: none;
+}
+.adminLoginWrap input,
+.adminLoginWrap input {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+}
+#adminWrap input + input {
+  margin-top: 8px;
+}
+#adminWrap input::-webkit-input-placeholder {
+  color: #000000;
+}
+#adminWrap input:-ms-input-placeholder {
+  color: #000000;
+}
+#adminWrap textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+#adminWrap textarea:-ms-input-placeholder {
+  color: #000000;
+}
+/* 체크박스 */
+.checkbox {
+  display: inline-block;
+  position: relative;
+}
+.checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.checkbox input + label {
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #000;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  text-indent: -9999px;
+}
+.checkbox input[type="checkbox"] + label {
+  background: url("/common/images/checkbox.png") no-repeat 0 1px;
+  background-size: auto 17px;
+}
+.checkbox input[type="checkbox"]:checked + label {
+  background-image: url("/common/images/checkbox-on.png");
+}
+.checkboxArea {
+  overflow: hidden;
+  margin: -10px -15px;
+}
+.checkboxArea > .checkbox {
+  margin: 10px 15px;
+}
+
+/* 테이블 상단 */
+.tableTop {
+  overflow: hidden;
+  margin: 10px 0;
+}
+.tableTop p {
+  float: left;
+  line-height: 26px;
+}
+
+/* 테이블 */
+.colTable,
+.rowTable {
+  width: 100%;
+  /* overflow-x: auto; */ /* 박진만 변경 */
+  white-space: nowrap;
+}
+.colTable table,
+.rowTable table {
+  min-width: 810px;
+  border-top: 2px solid #000;
+}
+.colTable tr > th,
+.colTable tr > td,
+.rowTable tr > th,
+.rowTable tr > td {
+  padding: 0 10px;
+  text-align: center;
+  height: 50px;
+  line-height: 51px;
+}
+.colTable tr > th a,
+.colTable tr > td a,
+.rowTable tr > th a,
+.rowTable tr > td a {
+  color: #333333;
+}
+.colTable.hoverTable tr:hover {
+  background: #f1f1f1;
+}
+table tr th {
+  font-weight: 500;
+}
+table tr td > p {
+  width: 100%;
+  white-space: normal;
+  line-height: 22px;
+  word-break: keep-all;
+  margin: 10px 0;
+}
+table .selectBox {
+  vertical-align: middle;
+  width: 100%;
+  /* margin-top: -5px; 안민환 수정*/
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: -0.42px;
+  color: #666666;
+}
+table .selectBox label,
+table input[type="text"] {
+  line-height: 30px;
+  height: 30px;
+}
+.dateWrap {
+  display: table;
+}
+.dateWrap .datepick {
+  display: table-cell;
+  width: 45%;
+}
+.dateWrap > span {
+  width: 27px;
+  text-align: center;
+  line-height: 40px;
+}
+.dateWrap .datepick input {
+  background-image: url(/common/images/common/date.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  cursor: pointer; /* 박진만 변경 */
+}
+table a.moreIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #666;
+  vertical-align: middle;
+  text-indent: -9999px;
+  margin-left: 20px;
+  margin-top: -2px;
+  background: #666 url(/common/images/icon01.png) no-repeat center;
+}
+.btn.detailViewBtn {
+  background: #666;
+  color: #fff;
+  border-color: #666;
+}
+.btn.detailViewBtn > span {
+  padding-right: 15px;
+  background: url(/common/images/icon02.png) no-repeat right center / 10px auto;
+}
+.btn.detailViewBtn.phone > span {
+  padding-right: 25px;
+  background: url(/common/images/icon03.png) no-repeat right 1px / 20px auto;
+}
+/* 게시판테이블 */
+.boardTable tr:hover {
+  background: #f1f1f1;
+}
+.boardTable tr td a:hover {
+  color: #0042c8;
+}
+/* 팝업안 테이블 */
+.layerPop .colTable.popTable table {
+  border-top: 2px solid #000;
+}
+.popTable.colTable table tr th {
+  background: #e7eef6;
+  color: #1d61a7;
+}
+.popTable.colTable table tr:hover {
+  background: #f1f1f1;
+}
+.popTable.colTable table tr td a {
+  color: #0042c8;
+}
+/* colTable */
+.colTable tr > th,
+.colTable tr > td {
+  border-bottom: 1px solid #dddee0;
+}
+.colTable tr th {
+  background: #e7eef6;
+  color: #1d61a7;
+}
+/*linetable*/
+.lineTable table {
+  border-top: 2px solid #cccccc;
+}
+.lineTable tr > th,
+.lineTable tr > td {
+  height: 38px;
+  line-height: 39px;
+}
+.lineTable tr > th,
+.lineTable tr > td {
+  border-left: 1px solid #cccccc;
+}
+.lineTable tr > th:first-child,
+.lineTable tr > td:first-child {
+  border-left: none;
+}
+.lineTable tr > th:last-child,
+.lineTable tr > td:last-child {
+  border-right: none;
+}
+
+.lineTable tr > th {
+  background: #f5f5f5;
+  color: #666;
+}
+/* rowTable */
+.rowTable tr th {
+  background: #e7eef6;
+  color: #1d61a7;
+  vertical-align: top;
+}
+.topInfoTable.rowTable tr th {
+  background: #f3f3f3;
+  color: #666666;
+}
+.rowTable tr > th,
+.rowTable tr td {
+  border-bottom: 1px solid #cccccc;
+}
+.rowTable.font14 tr > th,
+.rowTable.font14 tr td {
+  font-size: 14px;
+}
+.colTable.font14 tr > th {
+  padding: 0 5px;
+}
+/* 페이징 */
+.paging {
+  margin-top: 40px;
+  text-align: center;
+}
+.paging .inBox,
+.paging .popInBox {
+  display: inline-block;
+  overflow: hidden;
+}
+.paging .inBox .page,
+.paging .popInBox .page {
+  float: left;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.paging .inBox a,
+.paging .inBox strong,
+.paging .popInBox a,
+.paging .popInBox strong {
+  float: left;
+  margin: 0 5px;
+  width: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #333;
+}
+.paging .inBox strong,
+.paging .popInBox strong {
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  background: #1d61a7;
+  border-radius: 100%;
+}
+.paging .inBox > a,
+.paging .popInBox > a {
+  width: 26px;
+  text-indent: -9999px;
+}
+.paging .inBox > a + a,
+.paging .popInBox > a + a {
+  margin-left: 5px;
+}
+.paging .inBox > a.btnFirst,
+.paging .popInBox > a.btnFirst {
+  background: url("/common/images/btn-first.png") no-repeat center;
+  background-size: 100% auto;
+}
+.paging .inBox > a.btnPrev,
+.paging .popInBox > a.btnPrev {
+  background: url("/common/images/btn-prev.png") no-repeat center;
+  background-size: 100% auto;
+}
+.paging .inBox > a.btnNext,
+.paging .popInBox > a.btnNext {
+  background: url("/common/images/btn-next.png") no-repeat center;
+  background-size: 100% auto;
+}
+.paging .inBox > a.btnLast,
+.paging .popInBox > a.btnLast {
+  background: url("/common/images/btn-last.png") no-repeat center;
+  background-size: 100% auto;
+}
+/* 팝업 */
+.layerPop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.layerPop .inBox {
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 90px 0 0;
+  border: 3px solid #0055a5;
+  max-width: 100%;
+  background: #fff;
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-tansform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  box-sizing: border-box;
+}
+.layerPop .inBox .cont {
+  overflow-y: auto;
+  padding: 8px 35px 30px;
+}
+.layerPop .inBox strong.tit {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 30px 45px 0;
+  width: 100%;
+  height: 90px;
+  line-height: 60px;
+  font-size: 26px;
+  color: #000;
+  font-weight: 700;
+  background: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.layerPop .inBox .cont {
+  overflow-y: auto;
+  padding: 8px 45px 20px; /* 박진만 변경 */
+}
+.layerPop .inBox .cont .popTxt {
+  display: block;
+  margin: -8px 0 30px;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.layerPop .inBox .cont .popTxt:last-child {
+  margin: 20px 0 0 0;
+}
+.layerPop .inBox .cont h4 {
+  margin: 20px 0;
+}
+.layerPop .inBox .cont h4:first-child {
+  margin-top: 0;
+}
+.layerPop .inBox .cont h5 {
+  line-height: 30px;
+  font-size: 22px;
+}
+.layerPop .inBox .cont .inputTable {
+  padding-top: 0;
+  border-top: 0;
+}
+.layerPop .inBox .cont .inputTable table th,
+.layerPop .inBox .cont .inputTable table td {
+  padding: 3px;
+  height: auto;
+}
+.layerPop .inBox .btnBottom {
+  margin-top: 40px;
+  text-align: center;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.layerPop .inBox .btnBottom .btn {
+  min-width: 130px;
+  line-height: 44px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.layerPop .inBox .btnBottom .btn + .btn {
+  margin-left: 10px;
+}
+.layerPop .inBox > a {
+  display: block;
+  position: absolute;
+  top: 47px;
+  right: 45px;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  background: url("/common/images/ico_close.png") no-repeat center;
+  background-size: auto 20px;
+}
+.layerPop .inBox > ul {
+  padding: 30px 0;
+}
+.layerPop .inBox ul > li {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: -0.48px;
+  color: #000000;
+}
+.layerPop .inBox .checkbox input + label {
+  color: #666;
+}
+.layerPop.alertPop .inBox {
+  padding: 0;
+}
+.layerPop.alertPop .inBox .cont {
+  overflow-y: auto;
+  padding: 40px 20px 48px;
+  text-align: center;
+}
+.layerPop.alertPop .inBox .cont > strong {
+  display: block;
+  margin-top: 40px;
+  line-height: 46px;
+  font-size: 32px;
+  color: #000;
+  font-weight: 700;
+}
+.layerPop.alertPop .inBox .cont > p {
+  line-height: 30px;
+  font-size: 22px;
+  color: #000;
+  font-weight: 300;
+}
+.layerPop.alertPop .inBox .cont > span {
+  display: block;
+  line-height: 28px;
+  font-size: 18px;
+  color: #666;
+}
+.layerPop.alertPop .inBox .cont > strong + span {
+  margin-top: 12px;
+}
+.layerPop.alertPop .inBox .cont > strong + .btnBottom,
+.layerPop.alertPop .inBox .cont > strong + * + .btnBottom {
+  margin-top: 75px;
+}
+.layerPop.alertPop .inBox .btnBottom {
+  margin-top: 30px;
+}
+.layerPop.alertPop .inBox > a {
+  top: 29px;
+  right: 27px;
+}
+.layerPop.on .inBox {
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+}
+.layerPop .inBox table {
+  min-width: auto;
+}
+/* colTable */
+.layerPop .colTable table {
+  border-top: 2px solid #cccccc;
+}
+.layerPop .colTable tr th {
+  background: #f5f5f5;
+  color: #666666;
+}
+.layerPop .colTable tr th,
+.layerPop .colTable tr td {
+  height: 38px;
+  line-height: 37px;
+}
+.editoraArea {
+  width: 100%;
+  height: auto; /* 박진만 변경 */
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background: #f0f0f0;
+}
+.file {
+  margin-top: 18px;
+  font-size: 14px;
+  letter-spacing: -0.42px;
+  color: #000000;
+  line-height: 13px;
+  margin-bottom: 15px;
+}
+.file a {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-indent: -9999px;
+  background: url(/common/images/delete_ico.png) no-repeat center / 15px auto;
+}
+.fileDown {
+  display: table;
+  margin-bottom: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+.fileDown > * {
+  display: table-cell;
+  margin: 0 2px;
+  vertical-align: top;
+}
+.fileDown button {
+  line-height: 27px;
+  height: 30px;
+  color: #666;
+}
+.fileDown button:first-child {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  width: 120px;
+  text-align: left;
+}
+.fileDown button + input {
+  width: 220px;
+}
+.fileDown button + input + button {
+  width: 60px;
+  border: 1px solid #ebaaaa;
+  background: #ffe3e3;
+}
+.fileDown button + input + button + button {
+  width: 60px;
+  border: 1px solid #6ec3f3;
+  background: #e3f5ff;
+}
+
+.btnRed {
+	border: 1px solid #ebaaaa;
+	background: #ffe3e3;
+}
+
+.btnBlue {
+	border: 1px solid #6ec3f3;
+	background: #e3f5ff;
+}
+
+/*버튼*/
+.layerPop .btnWrap {
+  margin-top: 30px;
+}
+.layerPop .btnWrap button {
+  width: 110px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+.layerPop .btnWrap button.blueLBtn {
+  background: #dcf1ff;
+  border: 1px solid #0080d6;
+  color: #005289;
+}
+.layerPop .btnWrap button.dBlueBtn {
+  background: #4b6489;
+  border-color: #4b6489;
+  color: #fff;
+}
+.layerPop .btnWrap button.btnBlue {
+  background: #0055a5;
+  border-color: #0055a5;
+  color: #fff;
+}
+.layerPop .btnWrap button + button {
+  margin-left: 10px;
+}
+/* select */
+.floatR {
+  display: flex;
+  padding: 20px;
+  background: #f3f3f3;
+}
+.selectBox {
+  position: relative;
+  display: inline-block;
+  width: 116px;
+  border: 1px solid #ccc;
+  background: #fff;
+  text-align: left;
+}
+.selectBox label {
+  display: block;
+  overflow: hidden;
+  padding: 0 25px 0 10px;
+  line-height: 38px;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: url("/common/images/common/select-arrow.png") no-repeat right 11px center;
+  background-size: 7px auto;
+}
+.selectBox select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.search {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-right: 110px;
+  margin-left: 10px;
+}
+.search input {
+  border: 1px solid #ccc;
+  line-height: 40px;
+  width: 100%;
+  height: 40px;
+  padding: 0 14px;
+  color: #cccc;
+  vertical-align: top;
+}
+.btnSearch {
+  position: absolute;
+  top: 7px; /* 박진만 변경 */
+  right: 20px; /* 박진만 변경 */
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background: #0055a5;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: -0.48px;
+  color: #ffffff;
+}
+/*로그인페이지*/
+.adminLoginWrap {
+  position: absolute;
+  width: 1076px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.adminLoginWrap .inputWrap {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 520px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.adminBtn {
+  cursor: pointer; /* 박진만 변경 */
+  border: none;
+  background: #1e3f77;
+  color: #ffffff;
+}
+.tableBtn {
+  border: none;
+  background: #4687c3;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  width: auto;
+  min-width: 100px;
+}
+.tableBtn.iconLBtn {
+  padding: 0;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  color: #666666;
+  background: #fff url(/common/images/icon04.png) no-repeat center;
+  border: 1px solid #ccc;
+  line-height: 23px;
+  letter-spacing: -0.65px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.adminLoginWrap .inputWrap > p {
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #000;
+}
+.adminLoginWrap .inputList + p.notice {
+  margin-top: 32px;
+  padding-top: 11px;
+  border-top: 1px solid #ccc;
+}
+.inputWrap p.notice {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #888888;
+  border-bottom: none;
+}
+.inputWrap > p > strong {
+  padding-right: 50px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 51px;
+  letter-spacing: -1.5px;
+  color: #000000;
+}
+.adminLoginWrap .inputWrap > p img {
+  width: 132px;
+  float: right;
+  margin-top: -10px;
+}
+.adminLoginWrap .inputList {
+  position: relative;
+  width: 100%;
+  padding-right: 120px;
+}
+.inputWrap > div > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 100%;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+.adminLoginWrap input,
+.adminLoginWrap input {
+  font-size: 14px;
+  letter-spacing: normal;
+  text-align: left;
+  line-height: 33px;
+  height: 34px;
+  color: #000000;
+}
+.adminLoginWrap input + input {
+  margin-top: 8px;
+}
+.adminLoginWrap .inputWrap > p + p {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+/*otp설정페이지*/
+.otpCopy {
+  display: table;
+  width: 100%;
+}
+.otpCopy strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.otpCopy div > p,
+.otpCopy div > button {
+  width: 280px;
+  height: 32px;
+  line-height: 32px;
+}
+.otpCopy div > p {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+}
+.otpCopy div > button {
+  margin-top: 8px;
+  background: #838383;
+  border: none;
+  color: #fff;
+}
+.otpCopy > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.otpCopy > div + div {
+  width: 30%;
+  border: 1px solid #eaeaea;
+  padding: 19px;
+}
+.otpWrite {
+  position: relative;
+}
+.otpWrite {
+  margin-top: 30px;
+}
+.otpWrite > div {
+  position: relative;
+  margin-top: 14px;
+  padding-right: 120px;
+}
+.otpWrite > div > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  line-height: 32px;
+}
+/*비밀번호 변경*/
+.centerCon #container {
+  height: 100%;
+}
+.pwFindWrap {
+  margin: 0 auto 0;
+  padding-bottom: 30px;
+  width: 520px;
+  border-bottom: 1px solid #cccccc;
+}
+.pwFindWrap h3 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.7;
+  letter-spacing: -1.5px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  color: #000000;
+  border-bottom: 2px solid #000;
+}
+.pwFindWrap .inputArea {
+  margin-bottom: 30px;
+}
+#adminWrap .pwFindWrap input + input {
+  margin-top: 20px;
+}
+.pwFindWrap button {
+  margin-top: 30px;
+  width: 130px;
+  height: 42px;
+  line-height: 42px;
+}
+.rightContent{
+	margin: 0 0 30px 30px;
+	width:100%;
+}
+/*좌측메뉴*/
+.leftMenu {
+	float:left;
+}
+.accordion {
+  padding: 20px 0;
+  width: 240px;
+  background: #3b4c74;
+  cursor: pointer;
+}
+.accordion a {
+  display: inline-block;
+  padding: 15px 30px;
+  width: 100%;
+}
+.accordion .link {
+  padding: 10px 30px;
+  width: 100%;
+  background: #3b4c74;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.96px;
+  text-align: left;
+  color: #fff;
+}
+.accordion .subLink {
+  display: none;
+  padding: 15px 0;
+}
+.accordion .subLink > li > a {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+.accordion .thirdmenu {
+  display: none;
+}
+.accordion .thirdmenu > li > a {
+  padding: 5px 0 5px 40px;
+  background: #ececec;
+  font-size: 16px;
+  color: #666;
+}
+.accordion .thirdmenu > li.active > a {
+  color: #0055a5;
+}
+.accordion .thirdmenu li:first-child > a {
+  padding-top: 15px;
+}
+.accordion .thirdmenu li:last-child > a {
+  padding-bottom: 15px;
+}
+/* 파일등록박스 */
+.fileUploadBox {
+  padding: 35px;
+  background: #f3f3f3;
+}
+.btnInput {
+  position: relative;
+  padding-right: 166px;
+}
+.btnInput input[type="text"] {
+  height: 36px;
+  line-height: 36px;
+  border: solid 1px #cccccc;
+}
+.btnInput button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #666;
+  border: none;
+  line-height: 35px;
+  height: 36px;
+  width: 136px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.84px;
+  color: #ffffff;
+}
+.detailCon {
+  height: 240px;
+  max-height: 240px;
+  border: 1px solid #cccccc;
+}
+.detailCon.item1 {
+  height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.detailCon img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.gridWrap {
+  overflow: hidden;
+}
+.gridWrap > div {
+  float: left;
+}
+.gridWrap.grid64 > div {
+  width: 59%;
+}
+.gridWrap.grid64 > div + div {
+  padding-left: 20px;
+  width: 40%;
+}
+.gridWrap.grid3 > div {
+  width: calc(33% - 8px);
+}
+.gridWrap.grid3 > div + div {
+  padding-left: 0;
+}
+/*인기검색어*/
+.gridWrap .boxTit {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+  color: #666666;
+  padding: 8px 20px 0 45px;
+  border: solid 1px #cccccc;
+  line-height: 23px;
+  height: 40px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 10px 11px;
+  background-size: 30px auto;
+}
+.gridWrap + .gridWrap {
+  margin-top: 20px;
+}
+.gridWrap .detailCon {
+  padding: 7px;
+  height: 400px;
+  max-height: 400px;
+}
+.gridWrap .detailCon h4 {
+  padding-top: 15px;
+  padding-bottom: 11px;
+  text-align: center;
+}
+.gridWrap .detailCon h4 + * {
+  border: 1px solid #d9d9d9;
+}
+.gridWrap > div.members .boxTit {
+  background-image: url("/common/images/admin_icon01.png");
+}
+.gridWrap > div.signup .boxTit {
+  background-image: url("/common/images/admin_icon02.png");
+}
+.gridWrap > div.totalSrch .boxTit {
+  background-image: url("/common/images/admin_icon03.png");
+}
+.gridWrap > div.totalGood .boxTit {
+  background-image: url("/common/images/admin_icon04.png");
+}
+.gridWrap .boxTit span {
+  float: right;
+}
+.gridWrap .boxTit span strong {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #000000;
+}
+.gridWrap > div + div {
+  margin-left: 8px;
+}
+.gridWrap > div + div + div {
+  /*margin-top: 16px;*/
+  margin-left: 8px;
+}
+.gridWrap > div > h5 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.9px;
+  color: #000000;
+}
+.gridWrap > div > h5 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.gridWrap > div > h5 > span {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+  color: #666666;
+}
+.boxNumList ul {
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.boxNumList ul > li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.48px;
+  color: #666666;
+}
+.boxNumList ul > li span {
+  display: inline-block;
+  width: 18px;
+  margin: 0 10px 0 0;
+  height: 18px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 2px;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: -0.36px;
+  color: #666666;
+  vertical-align: 2px;
+}
+
+
+.hasDatepicker{
+	min-width:100px;
+}
+
+
+/* input radio css style - 여창혁(21.02.19) */
+
+

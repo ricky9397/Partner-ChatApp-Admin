@@ -1,0 +1,190 @@
+.layerTextarea {
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+textarea:read-only {
+    background: #ededed;
+}
+
+.quesEl {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.qesitmEl {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.tableTop > .right{
+    display: block;
+    vertical-align: middle;
+    float: right;
+}
+
+.txt_line {
+    width: 70px;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 텝메뉴 */
+.tab_area {overflow: hidden; margin-bottom: 30px;}
+.tab_area ul {border-bottom: 1px solid #ddd;}
+.tab_area ul li {display: inline-block; position: relative; list-style: none; cursor: pointer;}
+.tab_area ul li + li {margin-left: 5px;}
+.tab_area ul li a {display: inline-block; padding: 10px 15px; border-left: 1px solid #ddd; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 0px; border-radius: 5px 5px 0 0; background-color: #f5f5f5;}
+.tab_area ul li.active a {display: inline-block; padding: 10px 15px; border-left: 1px solid #ddd; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 0px; background-color: #fff;}
+.tab_area ul li.active:before {position: absolute; content: ""; display: block; width: 100%; height: 1px; bottom: -1px; left: 0px; background-color: #fff;}
+.tab_area ul li:hover a {display: inline-block; padding: 10px 15px; border-left: 1px solid #ddd; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 0px; background-color: #fff;}
+.tab_area ul li:hover:before {position: absolute; content: ""; display: block; width: 100%; height: 1px; bottom: -1px; left: 0px; background-color: #fff;}
+
+.thumbImg {
+    width: 200px;
+    height: 150px;
+}
+
+/* td sort */
+.td_sort{
+    position:relative;
+}
+.td_sort > i{
+    position: absolute;
+    top:50%;
+    margin-top:-8px;
+    left:20%;
+    cursor:pointer;
+}
+
+#adminWrap input::-webkit-input-placeholder {
+    color: #ddd;
+}
+#adminWrap input:-ms-input-placeholder {
+    color: #ddd;
+}
+#adminWrap textarea::-webkit-input-placeholder {
+    color: #ddd;
+}
+#adminWrap textarea:-ms-input-placeholder {
+    color: #ddd;
+}
+
+.checkBoxWrap {
+    white-space: normal;
+}
+
+.checkBoxWrap > span {
+    display:inline-block;
+    word-break:break-all;
+}
+
+.contentsArea {
+    white-space: pre-line;
+    line-height: initial !important;
+    padding: 10px !important;
+}
+
+/* 채점 */
+.scoring.true > p.quesArea {
+    background: #d8f3f7; }
+.scoring.true > p.quesArea > span.marking {
+    background: url(/common/images/custom/icon_exam_true.png) no-repeat;
+    background-size: contain; }
+.scoring.false > p.quesArea {
+    background: #f7dfd8; }
+.scoring.false > p.quesArea > span.marking {
+    background: url(/common/images/custom/icon_exam_false.png) no-repeat;
+    background-size: contain; }
+
+.scoring > p.answArea > span.marking {
+    background: url(/common/images/custom/icon_exam_true_mark.png) no-repeat;
+    background-size: cover; }
+
+/* 설문 통게 */
+.statsWrap {
+    overflow: hidden;
+    margin: 15px 0;
+}
+.statsWrap > h5 {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.9px;
+    color: #000000;
+}
+.statsWrap > div {
+    float: left;
+}
+.statsWrap.grid30 > div {
+    width: 33%;
+}
+.statsWrap.grid30 > div + div {
+    padding-left: 20px;
+    width: 33%;
+}
+.statsWrap.grid50 > div {
+    width: 50%;
+}
+.statsWrap.grid50 > div + div {
+    padding-left: 20px;
+    width: 50%;
+}
+.statsCon {
+    padding: 7px;
+    height: 240px;
+    max-height: 240px;
+    border: 1px solid #cccccc;
+}
+
+/* h */
+h > button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.grid30,.grid50 table {
+    min-width: 0 !important;
+}
+
+.grid30 > div {
+    float: left;
+    width: 33%;
+}
+
+.grid30 > div + div {
+    padding-left: 20px;
+    width: 33%;
+}
+.grid50 > div {
+    float: left;
+    width: 50%;
+}
+
+.grid50 > div + div {
+    padding-left: 20px;
+    width: 50%;
+}
+
+.scrollWrap {
+    min-height: 300px !important;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.scrollWrap tbody tr{
+    margin-top: 3px;
+}
+
+.scrollWrap thead tr th {
+    position: sticky;
+    top: 0;
+}
